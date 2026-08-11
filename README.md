@@ -1,6 +1,6 @@
 # BRIDGE
 
-**Version:** 1.0.1
+**Version:** 1.0.2
 
 **A governed multi-agent project operating model for owner-led, architect-directed, independently verified work.**
 
