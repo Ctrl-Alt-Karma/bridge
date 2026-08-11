@@ -133,4 +133,8 @@ Where practical, prefer tests that can disprove the claim:
 - bind to exact identities;
 - avoid vacuous success.
 
+When a deterministic test or check directly resolves a claimed property, prefer it as the primary gate for that property rather than asking an LLM to manually reconfirm the same deterministic fact. The check proves only the property it actually tests.
+
+The Verifier remains responsible for challenging whether the correct property was tested, whether the test is bound to the intended target and source identity, whether its scope and design are adequate and non-vacuous, and whether important failure modes remain outside the oracle.
+
 Agreement between models is weak evidence compared with a resolving oracle such as executable behavior or authoritative source bytes.

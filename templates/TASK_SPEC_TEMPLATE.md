@@ -47,6 +47,10 @@ State exactly what is authorized, for example:
 
 Do not leave write authority implicit.
 
+### Optional delegation / authority expansion
+
+Include this only when relevant. If recursive or sub-agent delegation, expansion of an existing cost, turn, or resource limit, broader tool access, or credential or permission expansion is authorized, define the delegated role, bounded objective and scope, applicable limit, tool, credential, or permission scope, and terminal stop condition. Do not invent a budget where none otherwise exists.
+
 ## Builder freedom
 
 Inside the authorized boundary, choose the implementation and investigative mechanics you judge most effective.

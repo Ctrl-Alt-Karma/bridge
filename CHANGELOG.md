@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.1 — 2026-08-11
+
+Backwards-compatible governance clarification and security hardening:
+
+- defined procedural and contextual Verifier independence without requiring model or vendor diversity;
+- made review-target and Builder-authored material evidence rather than verification authority;
+- preferred deterministic oracles for directly resolvable properties while preserving Verifier challenge scope;
+- prohibited implicit delegation or authority expansion and added optional task-spec guidance for explicit boundaries.
+
 ## 1.0.0 — 2026-08-11
 
 Initial public BRIDGE release, distilled from a multi-agent operating model developed through sustained governed technical work.
