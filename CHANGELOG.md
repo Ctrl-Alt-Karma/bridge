@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.2 — 2026-08-11
+
+Backwards-compatible provenance and enforcement hardening:
+
+- added proportional mechanical enforcement guidance with explicit residual trust for material procedural boundaries;
+- required projects and substantive review reports to bind claims to the governing or reviewed identity;
+- made role cold starts fail closed when required governing material is inaccessible;
+- clarified evidence-scoped Verifier challengeability, verbatim report preservation, and evidence-backed Fresh-Architect comprehension.
+
 ## 1.0.1 — 2026-08-11
 
 Backwards-compatible governance clarification and security hardening:

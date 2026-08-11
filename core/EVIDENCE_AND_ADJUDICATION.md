@@ -138,3 +138,15 @@ When a deterministic test or check directly resolves a claimed property, prefer 
 The Verifier remains responsible for challenging whether the correct property was tested, whether the test is bound to the intended target and source identity, whether its scope and design are adequate and non-vacuous, and whether important failure modes remain outside the oracle.
 
 Agreement between models is weak evidence compared with a resolving oracle such as executable behavior or authoritative source bytes.
+
+## 9. Verifier challenge and report preservation
+
+When a gate already warrants independent verification, the Verifier may challenge whether a material Architect interpretation follows from evidence within the verification scope. This does not make the Verifier a second Architect, an approval authority over the Architect, or a mandatory second adjudicator, and it must not create a recursive review loop.
+
+The original Verifier report must remain preserved verbatim and directly accessible in the project's evidence or control record. Architect commentary and adjudication are additive; they must not replace or rewrite the Verifier's report.
+
+## 10. Review identity binding
+
+When source or artifact identity can materially affect a substantive conclusion, Builder, Verifier, and Architect review or adjudication reports must identify the exact identity actually reviewed. Use a repository and commit, file hash, artifact ID and hash, or another stable identity proportionate to the claim.
+
+Do not require hashes for casual discussion or for analysis where identity cannot materially affect the conclusion. A report must not imply that it reviewed a later or different artifact merely because the project moved after the review occurred.

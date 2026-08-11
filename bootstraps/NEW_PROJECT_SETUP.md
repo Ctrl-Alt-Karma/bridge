@@ -10,6 +10,8 @@ Copy the contents of `project-template/` into its root, then complete the placeh
 
 Keep this BRIDGE repository as the governing reference, or copy the `core/`, `templates/`, and `bootstraps/` directories into the project control repository if the environment requires a self-contained package.
 
+Before assigning project work, record the governing BRIDGE identity in `PROJECT_CHARTER.md`: the BRIDGE version, source repository or distribution identity, and commit SHA or equivalent immutable identity where one applies. If no immutable identity is available, record the available version or distribution identity and that limitation honestly.
+
 ## Bootstrap sequence
 
 1. **Owner defines the charter.**

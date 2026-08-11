@@ -4,6 +4,10 @@ A brand-new Architect performs this **read-only** before steering work.
 
 Do not execute project work while completing the handshake.
 
+For continuation-critical claims, check the control record against cited primary evidence where practical. This includes claims that gate the next authorized action, accepted or frozen identities required to continue safely, and claims represented as independently verified or otherwise controlling the active gate. If such a claim is unsupported, contradicted, or cannot be reacquired, leave it unresolved. Repetition in `CURRENT_STATE.md`, a handoff, or prior Architect narrative does not promote a claim.
+
+Keep this check read-only and proportional to the active decision.
+
 ## Required restatement
 
 ### 1. Mission

@@ -200,3 +200,9 @@ An agent must not use delegation or orchestration to expand its authority. Unles
 When such delegation or expansion is authorized, the task must define, as applicable, the delegated role, bounded objective and scope, applicable cost, turn, or resource limit, tool, credential, or permission scope, and terminal stop condition. Do not invent a budget for a project or task that otherwise has none.
 
 Authorization under this rule does not alter the one-active-Builder or Verifier-independence rules.
+
+## 19. Enforce consequential boundaries proportionally
+
+Consequential authority boundaries should be mechanically enforced where a suitable control is reasonably available and proportionate to the risk.
+
+When a material boundary remains procedural rather than mechanically enforced, the project should record that residual trust explicitly in an enforcement map or equivalent project record. Do not require mechanical controls when they are unavailable, technically unsuitable, or disproportionate, and do not inventory immaterial boundaries merely for completeness.
