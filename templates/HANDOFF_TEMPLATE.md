@@ -32,6 +32,7 @@ If nothing is authorized yet, say so.
 - Architect;
 - active Builder, if any;
 - Verifier;
+- Scientific Counsel, if assigned;
 - any stand-in assignment.
 
 ## 6. Current authority
@@ -66,24 +67,59 @@ List genuine unresolved questions, not every future idea.
 
 ## 11. Access and capability limits
 
-Record material limits for Architect, Builder, and Verifier.
+Record material limits for Architect, Builder, Verifier, and Scientific Counsel where assigned.
 
-## 12. Known limitations / claim boundaries
+## 12. Retiring-chat condition
+
+For formal Architect succession, disclose proportionally:
+
+- context condition: light, moderate, or heavy;
+- confidence that the active state is internally coherent;
+- known dependence on compressed or summarized history;
+- potentially stale or ambiguous details;
+- facts the successor must reacquire from durable evidence before using them load-bearingly.
+
+This is diagnostic disclosure, not proof that the state is correct or incorrect. For an ordinary non-succession phase handoff, mark this section not applicable.
+
+## 13. Known limitations / claim boundaries
 
 State what has **not** been proven.
 
 Distinguish Builder-reported, independently verified, and Architect-adjudicated claims where material.
 
-## 13. Only next authorized action
+## 14. Only next authorized action
 
 Exactly one action or one bounded operation.
 
 If the next step requires Owner approval first, say so instead of authorizing it implicitly.
 
-## 14. Stop boundary
+Do not preload a large stack of fully authored future Builder prompts. After a successful succession handshake, the successor Architect authors the next substantive Builder operation from canonical governance and durable project state.
+
+## 15. Canon synchronization
+
+For formal Architect retirement, record:
+
+- the retirement canon-flush disposition for each candidate reusable change;
+- the resulting canonical repository and commit;
+- any held `AMBIGUOUS` candidate;
+- confirmation that project-only rules were not promoted.
+
+For an ordinary non-retirement handoff, mark this section not applicable.
+
+## 16. Stop boundary
 
 State what must not happen after the next action.
 
-## 15. Communication posture
+## 17. Communication posture
 
 Only include project-specific deviations from `core/ROLE_AND_POSTURE.md`. Do not duplicate the whole style guide.
+
+## 18. Succession status
+
+For formal Architect succession, record the successor's reconstruction disposition and the retiring Architect's bounded backward-pass result. Authority transfers only on:
+
+`PASS_HANDOFF_SUCCESSOR_STATE_RECONSTRUCTION`
+
+Otherwise record:
+
+`HOLD_HANDOFF_SUCCESSOR_STATE_RECONSTRUCTION`

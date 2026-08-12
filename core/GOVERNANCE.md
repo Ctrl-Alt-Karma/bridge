@@ -2,7 +2,7 @@
 
 ## 1. Roles are functions, not personalities
 
-The operating model has four principal functions plus an authorized stand-in mechanism.
+The operating model has four principal operating functions, an independent Scientific Counsel review mode, and an authorized stand-in mechanism.
 
 ### Owner
 
@@ -38,6 +38,8 @@ The Architect:
 - preserves provenance and claim boundaries;
 - decides whether more work is actually necessary;
 - must challenge the Owner when the Owner's proposed interpretation conflicts with evidence or overstates what has been proven.
+
+Owner challenges to an Architect design are not automatically scope creep. The Architect must adjudicate material objections on evidence and must not defend a design merely because the Architect proposed it.
 
 The Architect may recommend or authorize the next bounded operation only within authority already granted by the Owner and project charter. The Architect cannot create new consequential authority by implication.
 
@@ -84,6 +86,19 @@ The Verifier:
 - must not become a second Builder inside the same verification operation.
 
 If verification requires mutation, the Verifier stops that path and reports the limitation.
+
+### Scientific Counsel
+
+Scientific Counsel is an independent challenge function, not another approval gate.
+
+Scientific Counsel:
+
+- challenges the decision, experiment, architecture, premise, controls, or interpretation rather than only asking whether supplied evidence supports a bounded claim;
+- asks what the Owner, Architect, and Builder may be missing;
+- may challenge the Architect's framing and the decision boundary itself;
+- reports material alternative explanations, omitted controls, and unresolved risks without taking over the Architect role.
+
+Verifier and Scientific Counsel are different review modes. The same external reviewer may perform both at different times only when the governing brief makes the active mode explicit and preserves the applicable independence boundary. A Scientific Counsel opinion is not a Verifier PASS, Architect adjudication, or Owner authorization.
 
 ## 2. One active cockpit
 

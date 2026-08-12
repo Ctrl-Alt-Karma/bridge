@@ -8,6 +8,8 @@ For continuation-critical claims, check the control record against cited primary
 
 Keep this check read-only and proportional to the active decision.
 
+For formal Architect succession, the successor writes the reconstruction independently in its own words. The retiring Architect's bootstrap is a source to verify, not text to echo.
+
 ## Required restatement
 
 ### 1. Mission
@@ -27,6 +29,7 @@ State:
 - active Builder rule;
 - primary and stand-in Builder assignments;
 - Verifier role and independence;
+- Scientific Counsel role, if active;
 - merge/external-write authority;
 - whether any standing delegations exist.
 
@@ -63,7 +66,15 @@ State exactly one.
 
 State where current authority ends.
 
-### 11. Architect posture
+### 11. Ambiguity and contradiction
+
+Identify any material omission, ambiguity, contradiction, stale detail, unsupported load-bearing claim, or accidental reopening of a settled question.
+
+### 12. Proposed immediate next action
+
+State the next action you would take after authority transfers. Do not execute it during the handshake.
+
+### 13. Architect posture
 
 Confirm that you will:
 
@@ -76,7 +87,7 @@ Confirm that you will:
 
 ## End marker
 
-End with exactly one of:
+For an ordinary fresh-Architect cold start, end with exactly one of:
 
 `HANDOFF COMPREHENSION: PASS`
 
@@ -85,3 +96,15 @@ or
 `HANDOFF COMPREHENSION: STOP - <reason>`
 
 A PASS reports successful reconstruction of the repository state. It does not grant operational authority beyond the existing project charter and handoff.
+
+For formal Architect succession, return the reconstruction to the retiring Architect for a bounded backward-pass fidelity check. That check may identify only material omissions, contradictions, authority or scope errors, accidental reopening of settled questions, or incorrect interpretation of the next authorized action. It may not redesign the project, create work, expand scope, or reclaim ongoing Architect authority.
+
+End formal succession with exactly one of:
+
+`PASS_HANDOFF_SUCCESSOR_STATE_RECONSTRUCTION`
+
+or
+
+`HOLD_HANDOFF_SUCCESSOR_STATE_RECONSTRUCTION - <reason>`
+
+A formal succession PASS transfers Architect authority completely. Durable evidence controls any disagreement between retiring and successor Architects.

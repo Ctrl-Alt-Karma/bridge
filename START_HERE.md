@@ -20,7 +20,7 @@ A brand-new Architect does **not** inherit operational authority merely by readi
 
 Before directing new work, the fresh Architect must perform the read-only comprehension handshake in `templates/COMPREHENSION_HANDSHAKE_TEMPLATE.md` and present it to the Owner. The handshake must reconstruct the current mission, authority, frozen state, evidence boundary, active gate, next authorized action, and stop boundary.
 
-The Owner's acceptance of the handshake establishes continuity. It does not grant authority beyond the project charter and active task.
+For an ordinary cold start, the Owner's acceptance of the handshake establishes continuity. For formal Architect succession, the successor reconstruction and retiring Architect's bounded backward pass must reach `PASS_HANDOFF_SUCCESSOR_STATE_RECONSTRUCTION`; that PASS transfers Architect authority completely. Neither path grants authority beyond the project charter and active task.
 
 ## Fresh Builder or Verifier
 
