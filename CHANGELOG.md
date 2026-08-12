@@ -1,5 +1,16 @@
 # Changelog
 
+## Unreleased
+
+Architect-retirement and high-risk review hardening:
+
+- distinguished bounded Verifier review from independent Scientific Counsel challenge;
+- preserved independent review autonomy and added outside-brief observations;
+- added proportional predeclaration, negative-control, and source/runtime evidence guidance for high-risk gates;
+- required evidence-based adjudication of Owner red-team challenges;
+- defined long-operation status cadence and per-operation model/effort recommendations;
+- added two-way Architect succession, context-condition disclosure, successor ownership, and retirement canon-flush rules.
+
 ## 1.0.2 — 2026-08-11
 
 Backwards-compatible provenance and enforcement hardening:

@@ -150,3 +150,13 @@ The original Verifier report must remain preserved verbatim and directly accessi
 When source or artifact identity can materially affect a substantive conclusion, Builder, Verifier, and Architect review or adjudication reports must identify the exact identity actually reviewed. Use a repository and commit, file hash, artifact ID and hash, or another stable identity proportionate to the claim.
 
 Do not require hashes for casual discussion or for analysis where identity cannot materially affect the conclusion. A report must not imply that it reviewed a later or different artifact merely because the project moved after the review occurred.
+
+## 11. High-risk gate design
+
+When post-hoc judgment could materially alter a high-risk conclusion, design the gate before observing result-bearing evidence:
+
+- predeclare the acceptance or decision criteria;
+- include meaningful negative controls where practical;
+- when the claim materially depends on both intended source semantics and actual execution, require evidence for both.
+
+Apply this proportionally. Predeclaration does not eliminate judgment, negative controls need not be ceremonial, and source inspection does not substitute for runtime evidence when execution behavior is part of the claim.

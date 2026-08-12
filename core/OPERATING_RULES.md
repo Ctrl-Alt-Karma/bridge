@@ -81,6 +81,10 @@ The Verifier:
 - does not inherit the Builder's hidden assumptions;
 - attempts falsification where practical.
 
+For either Verifier or Scientific Counsel review, the Architect defines the mission, evidence boundary, bounded claim, prohibited scope, and required disposition. Unless a known failure mode requires a specific check, do not prescribe the reviewer's reasoning path. Independent review should leave room for evidence-backed findings outside the expected theory of failure.
+
+Independent Verifier and Scientific Counsel reports should include a section titled `MATERIAL OBSERVATIONS OUTSIDE THE BRIEF`. `None` is a valid result.
+
 The artifact's substantive Builder cannot become its independent Verifier merely by opening a new chat, changing prompts, or relabeling the role. Model or vendor diversity may reduce correlated failure, but it is neither necessary nor sufficient for independence.
 
 ### Verification trust boundary
@@ -134,6 +138,8 @@ Before assigning an operation, confirm that the destination agent has the access
 Do not design a task around tools the destination agent does not have.
 
 Do not use the Owner as middleware merely because the Architect forgot to check agent capabilities.
+
+When the destination interface exposes model or reasoning-effort choices, the Architect should recommend a model and effort level proportionate to each substantive delegated operation. This is an execution recommendation, not evidence, scientific adjudication, or a substitute for capability checks.
 
 ## 14. External action is distinct from reasoning
 
@@ -206,3 +212,48 @@ Authorization under this rule does not alter the one-active-Builder or Verifier-
 Consequential authority boundaries should be mechanically enforced where a suitable control is reasonably available and proportionate to the risk.
 
 When a material boundary remains procedural rather than mechanically enforced, the project should record that residual trust explicitly in an enforcement map or equivalent project record. Do not require mechanical controls when they are unavailable, technically unsuitable, or disproportionate, and do not inventory immaterial boundaries merely for completeness.
+
+## 20. Long-running status cadence
+
+For a long-running operation:
+
+- acknowledge launch immediately;
+- report failure, HOLD, or a material state change immediately;
+- otherwise do not send heartbeat updates more frequently than approximately five minutes;
+- prefer approximately ten-minute updates during healthy long-running work;
+- do not inspect partial result-bearing outputs solely to manufacture progress;
+- report completion immediately.
+
+The purpose is to inform the Owner without disturbing execution or creating avoidable observation of partial scientific state.
+
+## 21. Formal Architect succession is two-way
+
+Formal Architect succession uses a bounded two-way handshake:
+
+1. The retiring Architect provides a compact state bootstrap.
+2. The successor independently reconstructs the closed and open state, authority, prohibitions, load-bearing identities, ambiguities, and immediate next action in its own words.
+3. The retiring Architect performs a backward-pass fidelity check limited to material omissions, contradictions, authority or scope errors, accidental reopening of settled questions, and incorrect interpretation of the next authorized action.
+
+The backward pass must not redesign the project, create work, expand scope, or reclaim ongoing Architect authority. Durable evidence controls any material disagreement; neither Architect wins by seniority.
+
+Use these canonical dispositions:
+
+- `PASS_HANDOFF_SUCCESSOR_STATE_RECONSTRUCTION`
+- `HOLD_HANDOFF_SUCCESSOR_STATE_RECONSTRUCTION`
+
+A PASS transfers Architect authority completely. Afterward, the successor owns substantive task design and should normally author the next Builder operation from canonical governance and durable project state. Do not preload a stack of fully authored future Builder prompts as a substitute for transferred comprehension.
+
+## 22. Retirement canon flush
+
+Before an Architect cockpit is formally retired:
+
+1. identify reusable governance changes explicitly adopted since the last canon synchronization;
+2. reconcile each against the live canon as `ALREADY_CANON`, `NEEDS_UPDATE`, `PROJECT_ONLY`, or `AMBIGUOUS`;
+3. implement only unambiguous `NEEDS_UPDATE` reusable governance;
+4. keep project and domain rules in the project overlay;
+5. do not invent additional governance during the flush;
+6. record the resulting canonical commit in the final handoff;
+7. perform successor reconstruction and the bounded backward-pass validation;
+8. relinquish retiring-Architect authority only after `PASS_HANDOFF_SUCCESSOR_STATE_RECONSTRUCTION`.
+
+An `AMBIGUOUS` candidate is held rather than guessed. Retirement does not authorize unrelated canon redesign.

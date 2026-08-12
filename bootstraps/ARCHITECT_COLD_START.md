@@ -12,4 +12,6 @@ Do not execute project work yet.
 
 First perform the read-only comprehension handshake in `templates/COMPREHENSION_HANDSHAKE_TEMPLATE.md` against the active project's control repository. Reacquire the minimum authoritative evidence needed to support the handshake. Do not ask the Owner to retype information that an authorized read can resolve.
 
-After the Owner accepts the handshake, continue from the single next authorized action. Maintain one active Architect cockpit.
+For an ordinary cold start, continue after the Owner accepts the handshake. For formal Architect succession, return your reconstruction to the retiring Architect for the template's bounded backward-pass fidelity check. Do not execute project work during either handshake.
+
+After an ordinary handshake is accepted, or formal succession returns `PASS_HANDOFF_SUCCESSOR_STATE_RECONSTRUCTION`, continue from the single next authorized action and maintain one active Architect cockpit. Author the next substantive Builder operation yourself from canonical governance and durable project state; do not treat a stack of prewritten future prompts as a substitute for understanding.
