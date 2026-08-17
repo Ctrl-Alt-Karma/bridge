@@ -322,3 +322,33 @@ Equivalent concise terminology is acceptable if the distinctions survive.
 5. Accepted revision identity must be distinguished from stale or superseded local
    revisions.
 6. Apply proportionally. Do not produce a ledger of trivial actions.
+
+## 25. Return-contract completeness and payload preservation
+
+When an Architect or governing task specifies a return contract, the agent must
+perform a completeness check before sending its final response.
+
+Every required return-contract field must appear explicitly in the returned
+message unless the governing task explicitly marks that field optional.
+
+A PASS, summary sentence, artifact hash, table heading, attachment, durable file,
+or statement that the operation succeeded does not substitute for an omitted
+required payload field.
+
+For continuation-critical values such as numerical thresholds, extrema,
+measurements, counts, hashes, commit identities, artifact identities, paths,
+dispositions, or other load-bearing outputs:
+
+- return the exact value explicitly;
+- do not rely solely on rich rendering, tables, collapsible UI, attachments, or
+  formatting that may suppress, truncate, or fail to render the payload;
+- when presentation formatting could plausibly hide the payload, repeat the
+  load-bearing value in plain text;
+- if a required field cannot be returned, state that explicitly and return HOLD
+  rather than silently omitting it.
+
+Before final transmission, compare the drafted response against the return
+contract field-by-field.
+
+This rule governs response completeness only. It does not require duplication of
+non-load-bearing prose or create new evidence requirements.
