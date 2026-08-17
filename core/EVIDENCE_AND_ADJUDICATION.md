@@ -160,3 +160,74 @@ When post-hoc judgment could materially alter a high-risk conclusion, design the
 - when the claim materially depends on both intended source semantics and actual execution, require evidence for both.
 
 Apply this proportionally. Predeclaration does not eliminate judgment, negative controls need not be ceremonial, and source inspection does not substitute for runtime evidence when execution behavior is part of the claim.
+
+## 12. Evidence namespaces and negative existence claims
+
+A project may hold authoritative evidence outside its control repository: another
+workstation, a second filesystem on the same host, a Builder artifact store, CI
+artifacts, protected evidence directories, external storage, or any other
+registered evidence plane.
+
+When such a plane holds load-bearing artifacts, durable project state must index the
+namespace, or index the accepted artifacts individually, well enough for
+reacquisition.
+
+A search that does not cover every relevant evidence namespace establishes only
+`NOT_FOUND_IN_SEARCHED_SCOPE`. It must not be promoted to `PROJECT_ABSENT` or
+equivalent global language.
+
+Before asserting that a continuation-critical artifact does not exist, record the
+exact scopes searched, the registered relevant namespaces, which of them were
+actually accessible and searched, and any access limitation. If a relevant namespace
+was unavailable or unsearched, classify the state `ACCESS_LIMITED` or `UNRESOLVED`
+rather than absent.
+
+Established project absence should be rare and requires evidence sufficient to
+support a global negative. Phrases equivalent to "searched all local evidence" must
+not be used when only a subset of relevant planes was searched.
+
+A downstream artifact that presupposes an upstream operation is positive evidence
+that the operation may have occurred, and must trigger continuity investigation
+before a missing receipt is read as work never performed.
+
+## 13. Actor attestation
+
+`ACTOR_ATTESTED` is direct testimony from the person who performed, observed, or
+authorized a human action. It is primary evidence for inherently human facts:
+intent, motive, why data were acquired, who made a selection, whether a person
+inspected something, why an operational choice was made, and manual custody actions
+that were never mechanically logged.
+
+Actor attestation does **not** establish hashes, numerical outputs, machine
+execution, software behavior, or scientific computation.
+
+When material, serialize durably: the actor; date and time; the exact bounded claim;
+uncertainty and limitations; relevant artifact identities; how the testimony was
+captured; the channel; the transcriber where applicable; and whether the actor
+directly confirmed the serialized wording.
+
+An Architect-authored paraphrase that the actor has not confirmed must not silently
+become actor testimony.
+
+Do not infer human motive from proxy machine evidence when the responsible actor is
+available and can answer directly. Once an attestation is durably recorded and
+confirmed, successors reacquire it from durable state instead of asking the actor to
+repeat it.
+
+`ACTOR_ATTESTED` remains distinct from `OWNER_AUTHORIZED`. Owner authorization is
+authority, not technical proof. Actor testimony does not override contradictory
+mechanical evidence outside its bounded human-fact claim.
+
+## 14. Revision currency
+
+An artifact can be authentic and internally hash-consistent while still being stale,
+rejected, or superseded.
+
+For a load-bearing claim where multiple revisions may exist, evidence reacquisition
+must distinguish `ARTIFACT_IDENTITY` from `ACCEPTED_REVISION_STATUS`. A
+self-consistent manifest proves identity, not acceptance.
+
+Do not restore a historical revision to controlling status merely because it
+survives and verifies against its own manifest. When acceptance currency cannot be
+established, record it explicitly as `UNKNOWN` and do not use the artifact as
+closing evidence until it is resolved.

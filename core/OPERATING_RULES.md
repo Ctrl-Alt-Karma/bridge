@@ -257,3 +257,68 @@ Before an Architect cockpit is formally retired:
 8. relinquish retiring-Architect authority only after `PASS_HANDOFF_SUCCESSOR_STATE_RECONSTRUCTION`.
 
 An `AMBIGUOUS` candidate is held rather than guessed. Retirement does not authorize unrelated canon redesign.
+
+## 23. Load-bearing acceptance persistence
+
+An Architect must not authorize a subsequent substantive operation that depends on a
+newly accepted Builder, Verifier, operator, selection, adjudication, or
+evidence-producing result until that accepted state has been made durably
+reacquirable.
+
+For each newly accepted continuation-critical result, durable project state records,
+proportionate to the claim:
+
+- what was accepted;
+- the accepted revision or version;
+- the claim class;
+- the exact artifact identity;
+- repository and commit, or external/local path;
+- a hash or other stable identity where meaningful;
+- the access limitation, when the primary artifact is not repository-accessible;
+- the narrow claim the artifact establishes.
+
+The repository does not need to copy a local-only, protected, or large artifact. It
+must index it by stable identity. A later handoff is not a substitute for
+acceptance-time persistence.
+
+The default sequence is **accept, durably index, then authorize dependent work** —
+not accept, continue from chat, and reconstruct at retirement.
+
+Apply this to load-bearing state only. Do not create bookkeeping for casual
+discussion or trivial intermediate work.
+
+If durable indexing cannot be completed, classify the state explicitly before
+dependent work proceeds as `LOCAL_EVIDENCE_BOUND`, recording path and stable
+identity to the extent known, or as `COMPLETED_WORK_EVIDENCE_LINK_MISSING`. Do not
+let chat context serve as the missing index.
+
+## 24. Retirement continuity flush
+
+Before formal Architect retirement, reconcile continuation-critical **project work**
+completed since the last durable state checkpoint. This is distinct from the
+retirement canon flush, which reconciles reusable governance.
+
+Classify each load-bearing operation, decision, selection, adjudication, or
+evidence-producing action that affects accepted state, gate status, protected
+inputs, scientific predeclarations, sequencing, prohibitions, or the next authorized
+action as one of:
+
+- `DURABLY_RECORDED`
+- `LOCAL_EVIDENCE_BOUND`
+- `COMPLETED_WORK_EVIDENCE_LINK_MISSING`
+- `NOT_COMPLETED`
+- `INTENTIONALLY_NON_LOAD_BEARING`
+
+Equivalent concise terminology is acceptable if the distinctions survive.
+
+1. Missing durable evidence is not automatically proof that work never occurred.
+2. Downstream artifacts that presuppose a completed upstream operation must trigger
+   a continuity investigation before that upstream operation is labeled unfinished.
+3. Completed work with a missing evidence link must either be serialized and bound
+   before retirement, or handed off explicitly as a continuity defect with enough
+   identity and scope for bounded recovery.
+4. Formal succession must not silently PASS over a continuation-critical
+   completed-work versus evidence-link ambiguity.
+5. Accepted revision identity must be distinguished from stale or superseded local
+   revisions.
+6. Apply proportionally. Do not produce a ledger of trivial actions.

@@ -123,3 +123,21 @@ For formal Architect succession, record the successor's reconstruction dispositi
 Otherwise record:
 
 `HOLD_HANDOFF_SUCCESSOR_STATE_RECONSTRUCTION`
+
+## Continuity reconciliation (formal Architect retirement only)
+
+A compact completeness check, not an autobiography. Proportional to load-bearing
+work.
+
+- Load-bearing work completed since the last durable checkpoint.
+- Exact durable artifact or evidence identity for each material item.
+- Accepted revision or version where more than one may exist.
+- Material local-only evidence, with path and stable identity as far as known.
+- Any `COMPLETED_WORK_EVIDENCE_LINK_MISSING` item, with scope for recovery.
+- Any material human or actor fact that requires durable attestation.
+- Confirmation that downstream artifacts were checked for evidence that apparently
+  missing upstream work actually occurred, before calling it unresolved.
+- All material evidence namespaces used by the retiring cockpit.
+- For each namespace: durably indexed, searched during retirement, inaccessible, or
+  no longer relevant.
+- The search-scope basis for any claim that an artifact does not exist.
