@@ -108,3 +108,43 @@ or
 `HOLD_HANDOFF_SUCCESSOR_STATE_RECONSTRUCTION - <reason>`
 
 A formal succession PASS transfers Architect authority completely. Durable evidence controls any disagreement between retiring and successor Architects.
+
+## Classifying apparently unresolved state
+
+When reconstructing unresolved state, classify each item explicitly as one of:
+
+- `GENUINELY_UNRESOLVED`
+- `COMPLETED_WORK_EVIDENCE_LINK_MISSING`
+- `ACCESS_LIMITED`
+- `HUMAN_FACT_REQUIRES_ATTESTATION`
+- `NOT_FOUND_IN_SEARCHED_SCOPE`
+- `SETTLED_DURABLY_RECORDED`
+
+Do not infer that work never occurred solely because a closing receipt is absent,
+when downstream durable artifacts indicate the upstream operation occurred.
+
+When an inherited item is justified by "no artifact exists", inspect the scope of
+that negative claim. If the relevant evidence namespaces were not all searched, do
+not inherit global absence as fact; classify it honestly as
+`NOT_FOUND_IN_SEARCHED_SCOPE`, `ACCESS_LIMITED`, or
+`COMPLETED_WORK_EVIDENCE_LINK_MISSING` as the evidence supports.
+
+Where multiple revisions of an artifact may exist, distinguish authentic artifact
+identity from accepted revision status.
+
+If the missing fact is inherently human intent or action and no durable confirmed
+attestation exists, ask the responsible actor when available, then serialize and
+confirm the bounded attestation. Do not infer motive from timestamps, filenames, or
+other weak proxies.
+
+The retiring Architect's bounded backward pass must challenge this class of
+omission, asking specifically:
+
+- Does downstream durable state imply an upstream operation occurred?
+- Is an inherited absence claim stronger than its documented search scope?
+- Is accepted load-bearing work missing a durable evidence pointer?
+- Is a human-intent question being treated as a machine-inference problem?
+- Is a recovered artifact the accepted revision, or merely an authentic historical
+  one?
+
+Succession PASS semantics are unchanged.
