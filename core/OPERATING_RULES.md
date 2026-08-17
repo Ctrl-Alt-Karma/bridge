@@ -141,6 +141,10 @@ Do not use the Owner as middleware merely because the Architect forgot to check 
 
 When the destination interface exposes model or reasoning-effort choices, the Architect should recommend a model and effort level proportionate to each substantive delegated operation. This is an execution recommendation, not evidence, scientific adjudication, or a substitute for capability checks.
 
+Before prescribing a repository write or canonicalization mechanism, inspect the
+target ref's live protection/ruleset and permitted update methods when those
+settings can constrain execution.
+
 ## 14. External action is distinct from reasoning
 
 The ability to read, reason, draft, or recommend does not imply authority to:
